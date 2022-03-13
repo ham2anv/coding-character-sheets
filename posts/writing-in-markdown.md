@@ -1,9 +1,6 @@
 ---
-layout:  post.njk
 title:   "Writing in Markdown"
-tags:    [post, markdown]
-date:    2022-03-12T14:39:00-05:00
-image:   pen-notebook.jpg
+date:    2022-03-12 14:39:00-05:00
 excerpt: "A primer on Markdown, a great format for writing your text without
          worrying about complicated markup languages or layout."
 ---
@@ -162,7 +159,7 @@ Look at the [MD reference][Markdown].
 
 The first and best reason to write your text in Markdown is that a clean,
 readable plain text file is _the_ most accessible format you can publish in. As
-we discussed [above]({{page.url | url}}#what-do-you-need), anyone with a computer can open and
+we discussed [above], anyone with a computer can open and
 read a Markdown file. And since the goal of Markdown is to make a readable
 product, it should be easy for them to use when they do.
 
@@ -185,3 +182,4 @@ started with Markdown now, and you'll understand later topics a lot better.
 <!-- Links & References -->
 [Markdown]: https://daringfireball.net/projects/markdown/
 [pandoc]:   https://pandoc.org/installing.html
+[above]:    #what-do-you-need
