@@ -1,9 +1,6 @@
 ---
-layout: post.njk
 title: "Advanced Markdown Topics"
 date: 2022-03-15 08:18:56-05:00
-tags: [post, markdown, html]
-image: crayonbox.jpg
 excerpt: "You may not use these options in every document, but they're nice to
 have around: images, blockquotes, tables, and more."
 ---
