@@ -1,0 +1,23 @@
+code {
+  color: crimson;
+}
+
+#biggest {
+  border: 3px solid green;
+  font-size: xx-large;
+}
+
+#gray-code {
+  color: darkslategray;
+}
+
+.sidebar {
+  color: darkslategray;
+  border: 2px solid black;
+  margin: 2em 3em;
+  padding: 1em;
+}
+
+.but-in-blue {
+  color: blue;
+}
