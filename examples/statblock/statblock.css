@@ -1,0 +1,26 @@
+body {
+  max-width: 65ch;
+  margin: 1em;
+}
+
+h1 {
+  color: darkred;
+}
+
+h2 {
+  border-bottom: 1px solid darkred;
+  color: darkred;
+}
+
+table {
+  border: 0px solid darkred;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  width: 100%;
+}
+
+.stats {
+  border: 0px solid darkred;
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+}
