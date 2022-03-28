@@ -33,13 +33,13 @@ function clearTable(table) {
     });
 }
 
-document.querySelectorAll("table").forEach(table => {
+document.querySelectorAll("table[id^=\"random\"]").forEach(table => {
     table.addEventListener("click",ev => {
         highlightRow(ev.currentTarget)
     });
 });
 
-document.querySelectorAll("td").forEach(cell => {
+document.querySelectorAll("table[id^=\"random\"] td").forEach(cell => {
     cell.addEventListener("click", ev => {
         if (ev.currentTarget.classList.contains("highlight")) {
             clearTable(ev.currentTarget.closest("table"));
