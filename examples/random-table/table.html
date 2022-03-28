@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Table</title>
+    <link rel="stylesheet" href="table.css">
+    <script src="table.js" defer></script>
+</head>
+<body>
+    <p>Click on the tables below to select an entry at random. Click on the selected entry to reset the table, or click anywhere else in the table to select another entry at random.</p>
+    <table id="random-table-1">
+        <thead>
+            <tr>
+                <th>Roll (1d6)</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>No effect</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minor Effect</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Significant Effect</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Major Effect</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Extreme Effect</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Two Major Effects</td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="random-table-1" data-weighted=true>
+        <thead>
+            <tr>
+                <th>Roll (1d%)</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-weight="15">
+                <td>1-15</td>
+                <td>No effect</td>
+            </tr>
+            <tr data-weight="15">
+                <td>16-30</td>
+                <td>Minor Effect</td>
+            </tr>
+            <tr data-weight="25">
+                <td>31-55</td>
+                <td>Significant Effect</td>
+            </tr>
+            <tr data-weight="20">
+                <td>56-75</td>
+                <td>Major Effect</td>
+            </tr>
+            <tr data-weight="15">
+                <td>76-90</td>
+                <td>Extreme Effect</td>
+            </tr>
+            <tr data-weight="10">
+                <td>91-100</td>
+                <td>Two Major Effects</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
