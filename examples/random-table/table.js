@@ -47,7 +47,7 @@ function clearTable(table) {
 // the page with an id that starts with "random"
 // to run highlightRow() on that table
 document.querySelectorAll("table[id^=\"random\"]").forEach(table => 
-    table.addEventListener("click",ev => highlightRow(ev.currentTarget));
+    table.addEventListener("click",ev => highlightRow(ev.currentTarget))
 );
 
 // add a listener for click events to each cell in any
