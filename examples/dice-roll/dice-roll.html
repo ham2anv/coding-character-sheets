@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Dice Rolls</title>
+    <link rel="stylesheet" href="dice-roll.css">
+    <script src="dice-roll.js" defer></script>
+</head>
+<body>
+    <ul>
+        <li><span class="dice-roll">1d6</span> &mdash; Single die</li>
+        <li><span class="dice-roll">2d8</span> &mdash; Multiple dice</li>
+        <li><span class="dice-roll">1d12+2</span> &mdash; "Dice + adds"</li>
+        <li><span class="dice-roll">1d17</span> &mdash; Arbitrary die size</li>
+        <li><span class="dice-roll">1d</span> &mdash; Default # of sides (6 unless specified)</li>
+        <li><span class="dice-roll">4dF</span> &mdash; Fudge/Fate dice</li>
+    </ul>
+    <p>A longsword deals <span class="dice-roll">1d8</span> damage</p>
+</body>
+</html>
