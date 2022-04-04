@@ -5,7 +5,7 @@ function showRoll(span, defaultSides=6) {
     // where each element is an array containing the original string,
     // X, and Y. Store X as num and Y as sides. If Y is omitted, it
     // defaults to defaultSides (which defaults to 6).
-    const parse = [...span.innerText.matchAll(/(\d+)d([\d|F]*)([+-]\d+)*/g)];
+    const parse = [...span.innerText.matchAll(/(\d+)d([\dF]*)([+-]\d+)*/g)];
     const num = parse[0][1];
     const sides = (parse[0][2])?parse[0][2]:defaultSides;
     const adds = (parse[0][3])?parse[0][3]:0;
@@ -18,9 +18,10 @@ function showRoll(span, defaultSides=6) {
             result += fate[Math.floor(Math.random() * 3)];
         }
         else {
-            result += Math.floor(Math.random() * sides) + 1 + (adds * 1);
+            result += Math.floor(Math.random() * sides) + 1;
         }
     }
+    result += adds * 1;
 
     // Create a new <div> element containing the result of the die
     // roll with the "overlay" class and an event listener to delete
