@@ -1,9 +1,6 @@
 ---
-layout: post.njk
 title: "Pop-Up Tooltips"
 date: 2022-06-03 12:08:59-04:00
-tags: [post, css, html, javascript, tool]
-image: tooltips.jpg
 excerpt: "A tool for adding interactive tooltips to your game, good for defining terms, etc."
 ---
 
