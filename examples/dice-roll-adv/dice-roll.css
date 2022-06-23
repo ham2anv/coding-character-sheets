@@ -1,0 +1,31 @@
+.dice-roll {
+    position: relative;
+    cursor: pointer;
+
+    /* Cosmetics */
+    border-block-end: 1px dotted crimson;
+    font-weight: bold;
+    padding-inline: 0.5ch;
+}
+
+.dice-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* Cosmetics */
+    border: 1px dotted crimson;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+[data-success], [data-success] .dice-overlay {
+    border-color: blue;
+}
+
+[data-success] .dice-overlay {
+    color: blue;
+}

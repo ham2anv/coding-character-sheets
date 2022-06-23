@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Dice Rolls</title>
+    <link rel="stylesheet" href="dice-roll.css">
+    <script src="dice-roll.js" defer></script>
+</head>
+<body>
+    <ul>
+        <li><span class="dice-roll">2d6-1d4</span></li>
+        <li><span class="dice-roll" data-success="5">15d</span>&mdash;Shadowrun (d6s, counting a success on each 5 or 6)</li>
+        <li><span class="dice-roll" data-success="8" data-again="9">5d10</span>&mdash;Counting successes on 8+, "9-again" (9s and 10s count as a success and explode)</li>
+        <li><span class="dice-roll" data-explode="true">4d4</span>&mdash;Exploding dice</li>
+        <li><span class="dice-roll" data-explode="true">1d6-1d6</span>&mdash;Feng Shui (exploding + and -)</li>
+        <li><span class="dice-roll" data-highest="3">4d6</span>&mdash;Roll and keep the 3 highest</li>
+        <li><span class="dice-roll" data-lowest="1">2d20</span>&mdash;Disadvantage (roll and keep the lowest single die)</li>
+    </ul>
+</body>
+</html>
