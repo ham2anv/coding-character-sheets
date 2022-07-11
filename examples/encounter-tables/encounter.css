@@ -1,0 +1,69 @@
+body {
+    max-width: 65ch;
+    margin-inline: auto;
+}
+
+td {
+    transition: all;
+    transition-duration: 300ms;
+}
+
+table {
+    margin-block: 1em;
+}
+
+table[id^="random"] {
+    cursor: pointer;
+    border-collapse: collapse;
+}
+
+table[id^="random"] td:first-of-type {
+    text-align: center;
+}
+
+table[id^="random"] th:not(:first-of-type),
+table[id^="random"] td:not(:first-of-type) {
+    padding-inline-start: 1em;
+}
+
+.scale.highlight {
+    transform: scale(1.1) translateX(5%);
+}
+
+.gray-out {
+    color: darkgray;
+}
+
+
+.dice-roll {
+    position: relative;
+    cursor: pointer;
+
+    /* Cosmetics */
+    border-block-end: 1px dotted crimson;
+    font-weight: bold;
+    padding-inline: 0.5ch;
+}
+
+.dice-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* Cosmetics */
+    border: 1px dotted crimson;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+[data-success], [data-success] .dice-overlay {
+    border-color: blue;
+}
+
+[data-success] .dice-overlay {
+    color: blue;
+}
+
