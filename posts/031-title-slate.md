@@ -5,6 +5,9 @@ excerpt: "Let's walk through creating a title slate graphic for your next RPG
   campaign."
 ---
 
+<ins datetime="">_Edit_: This post has been updated (2022-11-19) to fix a bug
+when running in Google Chrome and Microsoft Edge.</ins>
+
 Recently, I was inspired to create a title slate graphic for a short Mage: the
 Ascension game I'm starting. Rather than break out a graphics program like GIMP,
 I thought I'd do it in HTML/CSS. So, I fired up [CodePen] and started playing
@@ -111,6 +114,7 @@ div.text {
     url("https://images.unsplash.com/photo-1565992693506-aae6c395545e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80");
   background-position: center;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 ```
@@ -122,7 +126,9 @@ meaning the center of the background is fixed at the center of the `div`.
 
 We use the same trick here with `background-clip` that we used in the example in
 [Fun with Backgrounds]. We make the text transparent and clip the background to
-only show in the shape of the text.
+only show in the shape of the text. <ins datetime="2022-11-19">_Edit_: the line
+`-webkit-background-clip: text;` was added to fix a problem in Chrome and 
+Edge.</ins>
 
 ```css
 div.shadow {
